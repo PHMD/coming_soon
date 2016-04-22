@@ -68,11 +68,12 @@ a{
 	padding-top: 28px;
 	background: #352d2f;
 	z-index: 9999;
+	position: relative;
 }
 
 
 .overlay {
-	display: none;
+	// display: none;
 	background-color: rgba(235, 66, 65, 0.9);
 	position: fixed;
 	top: 0;
@@ -86,9 +87,6 @@ a{
 	position: relative;
 	top: 40%; 
 	height: 60%;
-	ul.drop:after{
-		content: url(../images/arrow_down);
-	}
 	ul {
 		display: block;
 		text-align: center;
@@ -105,13 +103,14 @@ a{
 				}
 			}
 			ul.dropdown{
-				display: none;
+				// display: none;
 				position: absolute;
-				margin: 0 auto;
+
 				li {
 					display: block;
 					text-align: left;
 					padding: 0;
+					transition: all 0.3s ease-out;
 					a {
 						font-size: 24px;
 						letter-spacing: 4px;
@@ -122,6 +121,7 @@ a{
 		}
 		.drop:hover .dropdown {
 			display: block;
+			transition: all 0.3s ease-out;
 		}
 	}
 	footer {

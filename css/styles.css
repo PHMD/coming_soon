@@ -79,11 +79,11 @@ a {
   padding-top: 28px;
   background: #352d2f;
   z-index: 9999;
+  position: relative;
 }
 
-/* line 74, ../scss/styles.scss */
+/* line 75, ../scss/styles.scss */
 .overlay {
-  display: none;
   background-color: rgba(235, 66, 65, 0.9);
   position: fixed;
   top: 0;
@@ -93,57 +93,53 @@ a {
   transition: all .3s ease-out;
 }
 
-/* line 85, ../scss/styles.scss */
+/* line 86, ../scss/styles.scss */
 .submenu {
   position: relative;
   top: 40%;
   height: 60%;
 }
-/* line 89, ../scss/styles.scss */
-.submenu ul.drop:after {
-  content: url(../images/arrow_down);
-}
-/* line 92, ../scss/styles.scss */
+/* line 90, ../scss/styles.scss */
 .submenu ul {
   display: block;
   text-align: center;
 }
-/* line 95, ../scss/styles.scss */
+/* line 93, ../scss/styles.scss */
 .submenu ul li {
   display: inline-block;
   padding: 0 24px;
 }
-/* line 98, ../scss/styles.scss */
+/* line 96, ../scss/styles.scss */
 .submenu ul li a {
   font: 60px 'Teko', Helvetica, Arial, sans-serif;
   letter-spacing: 8px;
   text-transform: uppercase;
 }
-/* line 102, ../scss/styles.scss */
+/* line 100, ../scss/styles.scss */
 .submenu ul li a .fa {
   font-size: 24px;
 }
-/* line 107, ../scss/styles.scss */
+/* line 105, ../scss/styles.scss */
 .submenu ul li ul.dropdown {
-  display: none;
   position: absolute;
-  margin: 0 auto;
 }
-/* line 111, ../scss/styles.scss */
+/* line 109, ../scss/styles.scss */
 .submenu ul li ul.dropdown li {
   display: block;
   text-align: left;
   padding: 0;
+  transition: all 0.3s ease-out;
 }
-/* line 115, ../scss/styles.scss */
+/* line 114, ../scss/styles.scss */
 .submenu ul li ul.dropdown li a {
   font-size: 24px;
   letter-spacing: 4px;
   opacity: .7;
 }
-/* line 123, ../scss/styles.scss */
+/* line 122, ../scss/styles.scss */
 .submenu ul .drop:hover .dropdown {
   display: block;
+  transition: all 0.3s ease-out;
 }
 /* line 128, ../scss/styles.scss */
 .submenu footer ul {
